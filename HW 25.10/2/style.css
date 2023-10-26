@@ -1,0 +1,49 @@
+li a {
+    font-family: monospace;
+}
+
+.menuElement {
+    width: 250px;
+    height: 30px;
+    font-family: sans-serif;
+    background-color: rgb(79, 79, 79);
+    opacity: 1;
+    font-size: 8px;
+}
+
+.menuElement:hover {
+    opacity: 0.7;
+}
+
+.menuElement a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu .menuElement {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-top: 11px;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+}
+
+.favorites {
+    background-image: url(imgs/favorites.png);
+}
+
+.edit {
+    background-image: url(imgs/edit.png);
+}
+
+.history {
+    background-image: url(imgs/history.png);
+}
+
+.security {
+    background-image: url(imgs/security.png);
+}
+
+.settings {
+    background-image: url(imgs/settings.png);
+}

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: white;
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(128, 0, 111);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.main {
+    min-width: 50%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+}
+
+.main-block {
+    width: 100%;
+}
+
+.left-aside-block {
+    width: 25%;
+    float: left;
+}
+
+.left-aside {
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+.left-aside2 {
+    padding-bottom: 50px;
+}
+
+section {
+    background-color: rgb(210, 73, 228);
+    padding: 20px;
+}
+
+aside {
+    background-color: rgb(172, 27, 165);
+}
+.right-aside {
+    width: 25%;
+    float: left;
+    padding: 10px 10px 140px 10px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgb(124, 0, 128);
+    padding: 10px;
+}
