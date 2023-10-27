@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leaderboard</title>
+    <style>
+        body {
+            font-family: Unbounded;
+            background-color: #c5c5c5;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        thead td {
+            font-size: 14px;
+            color: white;
+            background-color: #019879;
+        }
+        tr,td {
+            color: rgb(180, 180, 180);
+            padding: 10px 30px 10px 20px;
+            margin: 0px;
+            font-size: 12px;
+        }
+        .default {
+            background-color: white;
+        }
+        .highlighted {
+            background-color: #f3f3f3;
+        }
+        .highlighted td {
+            color:#019879;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <table class="leaderboard">
+        <thead>
+            <td>Rank</td>
+            <td>Name</td>
+            <td>Points</td>
+            <td>Team</td>
+        </thead>
+        <tr class="default">
+            <td>1</td>
+            <td>Domenic</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+        <tr class="default highlighted">
+            <td>2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td>Students</td>
+        </tr>
+        <tr class="default">
+            <td>3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td>dcode</td>
+        </tr>
+    </table>
+</body>
+</html>
