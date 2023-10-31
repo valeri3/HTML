@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+
+ul li {
+    list-style-position: inside;
+    text-align: center; /* Center align text */
+    font-style: italic;
+    list-style-type: disc; /* Use empty circles for bullets */
+}
+
+.square {
+    list-style-type: square;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+ol ul li {
+    text-align: left;
+    list-style-type: square;
+    
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+}

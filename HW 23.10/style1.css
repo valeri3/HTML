@@ -1,0 +1,21 @@
+h1, h3 {
+    color: green;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: justify;
+}
+div {
+    font-weight: bold;
+}
+
+li {
+    font-weight: normal;
+    list-style-type: none;
+    padding-left: 30px;
+}

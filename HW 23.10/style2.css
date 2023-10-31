@@ -1,0 +1,23 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+}
+
+span{
+    color: red;
+}
+
+li {
+    color: rgb(106, 255, 106);
+}
+
+ul li {
+    color: black;
+}
