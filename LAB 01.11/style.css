@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img1 img {
+  float: left;
+  margin-top: 100px;
+  margin-left: 100px;
+
+  width: 100px;
+  height: 100px;
+
+  animation: boxscale1 1s alternate infinite;
+}
+
+.img2 img {
+  float: left;
+  margin-top: 100px;
+  margin-left: 100px;
+
+  width: 100px;
+  height: 100px;
+
+  animation: boxscale2 1s alternate infinite;
+}
+
+@keyframes boxscale2 {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes boxscale1 {
+
+  0% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
