@@ -1,0 +1,123 @@
+.block {
+    border: 1px solid #cfcfcf;
+    float:left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    height: 550px;
+    padding: 15px;
+    margin: 30px;
+    text-align: left;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.product, .description {
+      width: 100%;
+      height: 100%;
+      margin-top: 0px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+      backface-visibility: hidden;
+      background-color: #f1f1f1;
+      transition: 1s;
+}
+.description {
+    box-sizing: border-box;
+    padding: 25px;
+    transform: rotateY(180deg);
+}
+.card:hover .product {
+    transform: rotateY(180deg);
+}
+.card:hover .description {
+    transform: rotateY(360deg);
+}
+.description p {
+    opacity: 50%;
+}
+.mark {
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+}
+.block a {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+.block a:hover {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(127, 127, 127);
+}
+.heart {
+    border-radius: 5px;
+    background-image: url(imgs/158722.png);
+    padding: 5px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 25px;
+    float: right;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+.heart:hover {
+    background-image: url(imgs/60993.png);
+}
+.heart:active {
+    background-image: url(imgs/60993.png);
+}
+.stars {
+    background-image: url(imgs/2107992.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 25px;
+    float: left;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+.stars:hover {
+    background-image: url(imgs/1828961.png);
+}
+.cart {
+    border-radius: 5px;
+    background-image: url(imgs/2527736.png);
+    padding: 5px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 25px;
+    float: right;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+.cart:hover {
+    background-image: url(imgs/2527470.png);
+}
+.price {
+    text-align: left;
+    width: 100px;
+    line-height: 12px;
+}
+.price s {
+    opacity: 30%;
+    font-size: x-small;
+}
+.price p {
+   color: red;
+   font-size: large;
+}
+.price i {
+    color: rgb(93, 93, 93);
+    font-size: medium;
+}
