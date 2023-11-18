@@ -1,185 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apple Iphone 15</title>
-  <style>
-    body
-    {
-      background-color: rgb(175, 175, 175);
-    }
-
-    .card {
-      width: 350px;
-      height: 400px;
-      margin: 0 auto;
-      
-      position: relative;/*относительное позиционирование родительского элемента,
-      чтобы дочерние .product, .description располагать внутри card*/
-      border: 1px solid #363636aa;
-    }
-
-    .product, .description 
-    {
-      width: 100%;/*ширина 100% родителя*/
-      height: 100%;/*высота 100% родителя*/
-      position: absolute;/*абсолютное позиционирование элементов внутри родителя с классом card*/
-      left: 0;/*координата позиционирвоания слева 0px*/
-      top: 0;/*координата позиционирвоания сверху 0px*/
-      text-align:center;
-      backface-visibility: hidden;/*скрывает обратную сторону во время переворота*/
-      background-color: #fff;
-      transition: 1s;
-     }
-
-    .description a
-    {
-      display:inline-block;
-      padding: 10px 10px;
-      margin-top:10px;
-      text-decoration:none;
-      text-transform:uppercase;
-      color:#fff;
-      background-color: #ddf5e3;
-    }
-    .description 
-    {
-      box-sizing:border-box;
-      padding:5px;
-      transform: rotateY(180deg); /*поврот блока с описание на 180 град, прячем в начальном состоянии, без наведения курсора мыши*/
-    }
-    .card:hover .product {
-    	transform: rotateY(180deg); /*разворачиваем блок с изображением на 180 градусов*/
-    }
-    .card:hover .description {
-    	transform: rotateY(360deg); /*возвразщаем блок с описанием*/
-    }
-
-
-
-
-    
-    .gallery 
-    {
-        /* width: 920px;
-        height: 300px; */
-        margin: auto;
-        margin-top: 200px;
-        /* border: 1px solid #ffffff77; */
-        background-color: #55555586;
-        text-align: center;
-        padding: 50px;
-        margin-bottom: 100px;
-    }
-
-    .thumbnails 
-    {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0;
-    }
-
-
-    .thumbnail 
-    {
-        /* margin: 40px; */
-        /* width: 100px;
-        height: 80px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .thumbnail:hover 
-    {
-        border-color: #e24428;
-        background-color: #9999998e;
-    }
-
-    .name-prod
-    {
-      position:absolute;
-      bottom: 0;
-      
-      width: 350px;
-      height: 90px;
-      margin-top: 200px;
-      border: 0;
-      text-align:center;
-      font-size: small;
-      background-color: #888888;
-      
-   
-    }
-
-    img
-    {
-        width: 300px;
-        height: 290px;
-    }
-
-    a:hover
-    {
-      background-color: rgb(228, 47, 47);
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="gallery">
-    <ul class="thumbnails">
-        <li class="thumbnail">
-          <div class="card">
-            <div class="product"><img src="1.jpg"></div>
-            <div class="description">
-              <h2>Description</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet</p>
-              <a href="index2.html">детальніше</a>
-            </div>
-            <div class = "name-prod">
-              <p>Шкарпетки жовто-зелені "Капібари" NOSKAR</p>
-               <h2>125 грн</h2>
-              </div>
-          </div>
-        </li>
-
-        <li class="thumbnail">
-          <div class="card">
-            <div class="product"><img src="2.jpg"></div>
-            <div class="description">
-              <h2>Description</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet</p>
-              <a href="index4.html">buy</a>
-            </div>
-            <div class = "name-prod">
-              <p>Шкарпетки рожево-зелені "Капібари" NOSKAR</p>
-               <h2>125 грн</h2>
-            </div>
-          </div>
-        </li>
-
-        <li class="thumbnail">
-          <div class="card">
-            <div class="product"><img src="3.jpg"></div>
-            <div class="description">
-              <h2>Description</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet</p>
-              <a href="index5.html">buy</a>
-            </div>
-            <div class = "name-prod">
-              <p>Шкарпетки синьо-жовті "Капібари" NOSKAR</p>
-               <h2>125 грн</h2>
-            </div>
-          </div>
-        </li>
-    </ul>
-</div>
+    <header>
+        <div><b>WRITERS</b></div>
+        <div>DISCUSSIONS</div>
+        <div>BOOKS</div>
+        <div>THE AUTHORS</div>
+        <div>READERS</div>
+    </header>
+    <main>
+        <h1><b>William Shakespeare</b></h1>
+        <hr>
+        <h4>From Wikipedia, the free encyclopedia</h4>
+        <p>William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English poet, playwright and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called England's national poet and the "Bard of Avon". His extant works, including collaborations, consist of approximately 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright.</p>
+        <p>Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith. Sometime between 1585 and 1592, he began a successful career in London as an actor, writer, and part-owner of a playing company called the Lord Chamberlain's Men, later known as the King's Men. At age 49 (around 1613), he appears to have retired to Stratford, where he died three years later. Few records of Shakespeare's private life survive; this has stimulated considerable speculation about such matters as his physical appearance, his sexuality, his religious beliefs, and whether the works attributed to him were written by others. Such theories are often criticised for failing to adequately note that few records survive of most commoners of the period.</p>
+        <p>Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and histories and are regarded as some of the best work produced in these genres. Until about 1608, he wrote mainly tragedies, among them Hamlet, Othello, King Lear, and Macbeth, all considered to be among the finest works in the English language. In the last phase of his life, he wrote tragicomedies (also known as romances) and collaborated with other playwrights.</p>
+        <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy in his lifetime. However, in 1623, two fellow actors and friends of Shakespeare's, John Heminges and Henry Condell, published a more definitive text known as the First Folio, a posthumous collected edition of Shakespeare's dramatic works that included all but two of his plays. The volume was prefaced with a poem by Ben Jonson, in which Jonson presciently hails Shakespeare in a now-famous quote as "not of an age, but for all time".</p>
+        <p>Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by new movements in scholarship and performance. His plays remain popular and are studied, performed, and reinterpreted through various cultural and political contexts around the world.</p>
+    </main>
+    <aside>
+        <img src="imgs/William_Shakespeare.jpg">
+        <ul>
+            <li><b>Born:    </b>26 April 1564</li>
+            <li><b>Died:    </b>23 April 1616</li>
+            <li><b>Spouse:  </b>Anne Hathaway (m. 1582)</li>
+            <li><b>Children:</b> Susanna Hall, Hamnet Shakespeare, Judith Quiney</li>
+            <li><b>Parents: </b>John Shakespeare (father), Mary Arden (mother) </li>
+        </ul>
+    </aside>
+    <footer>
+        <p><b>Similar authors:</b></p>
+        <div><img src="imgs/WilliamWordsworth.jpg"><p>William Wordsworth</p></div>
+        <div><img src="imgs/Cervantes_Jauregui.jpg"><p>Cervantes Jauregui</p></div>
+        <div><img src="imgs/Dickens_Gurney.jpg"><p>Dickens Gurney</p></div>
+        <div><img src="imgs/Oscar_Wilde_Sarony.jpg"><p>Oscar Wilde Sarony</p></div>
+        <div><img src="imgs/Edgar_Allan_Poe.jpg"><p>Edgar Allan Poe</p></div>
+        <div><img src="imgs/Anne_Hathaway.jpg"><p>Anne Hathaway</p></div>
+    </footer>
 </body>
 </html>
