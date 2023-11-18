@@ -111,7 +111,7 @@
 }
 .price s {
     opacity: 30%;
-    font-size: x-small;
+    font-size: small;
 }
 .price p {
    color: red;
