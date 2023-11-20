@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>pizza</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="center">
+      <div class="box">
+         <h1>P I Z Z A ORDER</h1>
+
+         <form method="get">
+            <label class="label1">Name:
+               <input type="text" name="myname" placeholder="name" id="Name">
+            </label>
+            <label class="label1">Adress:
+               <input type="text" name="Adress" placeholder="adress" id="Address">
+            </label>
+            <label class="label1">Phone:
+               <input type="tel" name="Phone" placeholder="+380" id="Phone">
+            </label>
+            <label class="label1">Email:
+               <input type="email" name="email" placeholder="gmail.com" />
+            </label>
+            <label class="label2">Number of persons:
+               <input type="number" name="number" min="1" max="5" />
+            </label>
+            <div class="radio">Select delivery type:</div>
+            <div>
+               <input type="radio" id="delivery" name="delivery" value="Taxi">
+               <label for="delivery">Taxi</label><br>
+               <input type="radio" id="Pickup" name="delivery" value="Pickup">
+               <label for="Pickup">Pickup</label><br>
+            </div>
+            <div class="radio">List of fillings:</div>
+            <div>
+               <input type="radio" id="tomatoes" name="fillings" value="tomatoes">
+               <label for="tomatoes">tomatoes</label><br>
+               <input type="radio" id="mushrooms" name="fillings" value="mushrooms">
+               <label for="mushrooms">mushrooms</label><br>
+               <input type="radio" id="cabbage" name="fillings" value="cabbage">
+               <label for="cabbage">cabbage</label><br>
+            </div>
+            <div class="radio">Add more cheese?:</div>
+            <div>
+               <input type="radio" id="yes" name="fillings" value="yes">
+               <label for="yes">Yes</label><br>
+               <input type="radio" id="no" name="fillings" value="no">
+               <label for="no">No</label><br>
+            </div>
+            <label class="label3">Commentary:
+               <textarea></textarea>
+            </label>
+            <div class="button"><input type="submit" value="send" /></div>
+         </form>
+         <hr>
+         <br>
+         <div class="inform2">Thanks for your order!</div>
+      </div>
+   </div>
+</body>
+
+</html>

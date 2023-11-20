@@ -1,0 +1,44 @@
+body {font-family:'Courier New', Courier, monospace}
+.center {display: flex; justify-content: center;}
+.box {
+    width: 400px;
+    height: 550px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 5px;
+    padding: 0px 20px 20px 20px;
+    background-color: rgb(228, 228, 228);
+}
+.label1 input {width: 97%; padding: 5px; margin: 5px 0px 20px 0px;}
+.label2 input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 35px;
+    padding: 5px;
+}
+b {margin-right: 10px; color: rgb(187, 98, 25);}
+i {font-size: 10px;}
+form div {margin-top: -15px; margin-bottom: 20px;}
+form .button input {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    width: 400px;
+    padding: 5px;
+    background-color: rgb(136, 136, 136);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+form .button input:hover {background-color: #ffd813;}
+.inform1 {font-size: 18px; text-align: center;}
+.inform2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+.radio {margin-top: 5px;}
+.Date {margin-top: 5px;}
+select {margin: 5px 0px 5px 0px;}
+h1 {text-align: center;}

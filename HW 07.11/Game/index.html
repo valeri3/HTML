@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="center">
+      <div class="box">
+         <h1>G A M E</h1>
+         <form method="get">
+            <label class="label1">Name:
+               <input type="text" name="myname" placeholder="name" id="name">
+            </label>
+            <label class="label1">Email:
+               <input type="email" name="email" placeholder="gmail.com" />
+            </label>
+            <div class="Date">Date: <input type="date" name="Date" /></div>
+            <div class="radio">Gender:</div>
+            <div>
+               <input type="radio" id="Men" name="Gender">
+               <label for="Men">Men</label><br>
+               <input type="radio" id="Women" name="Gender">
+               <label for="Women">Women</label><br>
+            </div>
+            <div class="select_City">
+               <select name="City" size="1">
+                  <optgroup label="Ukraine">
+                     <option value='Odessa' selected>Odesa</option>
+                     <option value='Kherson'>Kherson</option>
+                     <option value='Kyiv'>Kyiv</option>
+                  </optgroup>
+                  <optgroup label="Romania">
+                     <option value='București' selected>București</option>
+                     <option value='Zlatna'>Zlatna</option>
+                     <option value='Urziceni'>Urziceni</option>
+                  </optgroup>
+                  <optgroup label="Montenegro">
+                     <option value="Budva">Budva</option>
+                     <option value="Podgorica">Podgorica</option>
+                     <option value="Cetinje">Cetinje</option>
+                  </optgroup>
+                  <optgroup label="Moldova">
+                     <option value='Dondușeni' selected>Dondușeni</option>
+                     <option value='Cantemir'>Cantemir</option>
+                     <option value='Chișinău'>Chișinău</option>
+                  </optgroup>
+               </select>
+            </div>
+            <div class="Type_hero">
+               <select name="City" size="1">
+                  <optgroup label="Type hero">
+                     <option value='A classic hero' selected>A classic hero</option>
+                     <option value='Anti-hero'>Anti-hero</option>
+                     <option value='Innovative hero'>Innovative hero</option>
+                     <option value='Female hero'>Female hero</option>
+                  </optgroup>
+               </select>
+            </div>
+            <div>
+               <label class="label2">Gaming experience:
+                  <input type="number" name="number" min="0" max="20" />
+               </label>
+            </div>
+            <div class="button"><input type="submit" value="send" /></div>
+         </form>
+         <div class="inform1"><a href="#">Game here</a></div>
+         <hr>
+         <div class="inform2">The best game experience</div>
+      </div>
+   </div>
+</body>
+
+</html>

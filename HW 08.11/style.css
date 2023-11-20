@@ -1,0 +1,84 @@
+body {margin: 0; padding: 0;}
+#str {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#logo {
+    border: 1px solid black;
+    padding: 2em;
+    width: 10%;
+}
+div header {
+    border: 1px solid black;
+    padding: 0em 1% 0em 1%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    margin-right: 1.5%;
+}
+header div {
+    background-color: aliceblue;
+    display: inline-block;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 1%;
+    margin: 0em 0.5% 0em 0.5%;
+}
+#str main {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+}
+#str main main {
+    width: 75%;
+    height: 60vh;
+    border: 3px black solid; 
+    padding: 1%;
+}
+#first {
+    width: 100%;
+    height: 20vh;
+    border: 3px black solid; 
+    margin-left: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+#second {
+    width: 100%;
+    padding: 1%;
+    height: 20vh;
+    border: 3px black solid; 
+    margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+#second div {
+    background-color: rgb(130, 130, 130);
+    width: 25%;
+    height: 10vh;
+    margin: 1%;
+}
+#asides {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#search1 {display: none;}
+@media screen and (max-width:1024px) {
+    #search1 {display: block;}
+    #search2 {display: none;}
+}
+@media screen and (max-width:768px) {
+    header div {width: 23%;}
+    #first {display: none;}
+    #str main {flex-direction: column;}
+    #str main main {width: 100%;}
+    #asides {width: 100%;}
+    #second {height: 15vh; margin: 0;}
+}

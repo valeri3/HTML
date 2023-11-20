@@ -1,0 +1,15 @@
+
+@media only screen and (max-width: 600px) {
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .row .col.s9 {
+       width: 100%;
+    }
+
+    .row .col.s3 {
+        margin: 1px;
+    }
+}
