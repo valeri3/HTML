@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+    <div id="block">
+        <h2>STEP 1: your details</h2>
+        <div>
+            <label name="name">Name:</label>
+            <input type="text" placeholder="name" name="name">
+        </div>
+        <div>
+            <label name="email">Email:</label>
+            <input type="email" placeholder="@gmail.com" name="email" pattern="^(\w{5,}@)(([a-z]|[A-Z]){3,5})(\.[a-z]{2,5})$">
+        </div>
+        <div>
+            <label name="phone">Phone number:</label>
+            <input type="tel" placeholder="+380123456789" name="phone" pattern="^(\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2})|(\d{2}\d{3}\d{3}\d{2}\d{2})$">
+        </div>
+
+        <h2>STEP 2: delivery address</h2>
+        <div>
+            <label name="address">Address:</label>
+            <textarea name="address" rows="4" cols="30" placeholder="address"></textarea>
+        </div>
+        <div>
+            <label name="code">Post code:</label>
+            <input type="text" placeholder="3333" name="code" pattern="\d{4}">
+        </div>
+        <div>
+            <label name="country">Country:</label>
+            <input type="text" placeholder="Ukraine" name="country">
+        </div>
+        <h2>STEP 3: card details</h2>
+        <div>
+            <label name="cardt">Card type:</label>
+            <img src="1.png" height="30px" width="50px">
+            <input name="cardtype" type="radio" style="flex-basis: 10%;">
+             <img src="2.png" height="30px" width="50px">
+            <input name="cardtype" type="radio" style="flex-basis: 10%;">
+        </div>
+        <div>
+            <label name="cardnumber">Card number:</label>
+            <input type="text" name="cardn" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" placeholder="XXXX-XXXX-XXXX-XXXX">
+        </div>
+        <div>
+            <label name="cards">Security code:</label>
+            <input type="text" placeholder="*************" name="cards" pattern="^\d{3}$">
+        </div>
+        <div>
+            <label name="cardnumber">Card name:</label>
+            <input type="text" name="cardn" placeholder="PROKHOROVA VALERIIA">
+        </div>
+        <a href=""><div id="button"><h2>BUY IT!</h2></div></a>
+    </div>
+    </form>
+</body>
+</html>
