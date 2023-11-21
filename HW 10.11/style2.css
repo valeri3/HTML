@@ -1,19 +1,18 @@
 body {
-    background-color: #333232;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 main {display: flex; justify-content: space-between; margin: 20px;}
 #main {
-    background-color: #3d3d3d;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 70%;
 }
-video {width: 100%; border-radius: 20px;}
-h1 {color: #ff0000;}
+video {width: 100%; border-radius: 3px;}
+h1 {color: #ff9191;}
 #buttons {
     display: flex;
     align-items: center;
@@ -28,14 +27,14 @@ h1 {color: #ff0000;}
     cursor: pointer;
 }
 #butts {margin-left: 10px; cursor: pointer;}
-#desc {margin-top: 20px;}
+#desc {margin-top: 20px; color: #222222;}
 dl {margin-top: 20px;}
-dt {font-weight: bold; color: #ff0000;}
-dd {margin-left: 20px;}
+dt {font-weight: bold; color: #252525;}
+dd {margin-left: 20px;color:#252525;}
 aside {width: 25%;}
 div {margin-bottom: 20px;}
-div b {color: #ff0000;}
-div p {color: #606060;}
+div b {color: #2e2e2e;}
+div p {color: #222222;}
 .channel-info {margin-left: 10px;}
 .channel-info:first-child {color: #3498db;}
 .channel-info:nth-child(2) {color: #e74c3c; }
