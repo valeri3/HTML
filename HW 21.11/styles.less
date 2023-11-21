@@ -1,0 +1,92 @@
+@color: rgb(46, 134, 68);
+@colortone1: @color + 60;
+@colortone2: @colortone1 + 10;
+
+@main-div: main;
+@header: header;
+@sidebar: sidebar;
+@footer: footer;
+
+@photo-class: photo;
+@photo-size: 128px;
+
+@bg: background-color;
+@default: 12px;
+
+@sidebar-padding: 34px;
+
+@fsize: 24px;
+@text: white;
+
+@p-right: padding-right;
+@a-items: align-items;
+
+@w: width;
+@h: height;
+
+@t-decor: text-decoration;
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.@{header} {
+    @{bg}: @color;
+    padding: @default;
+    color: @text;
+    text-align: center;
+}
+
+.@{footer} {
+    @{bg}: @colortone1;
+    color: @text;
+    padding: @default * 2;
+}
+
+.@{photo-class} img {
+    @{h}: @photo-size;
+    display: block;
+    @{p-right}: @default * 2;
+}
+
+.@{photo-class} {
+    padding: @default * 4;
+    font-size: @fsize;
+    display: flex; 
+    @{a-items}: center;
+}
+
+.@{sidebar} {
+    float: left;
+    @{w}: 250px;
+    @{h}: 100%;
+    @{bg}: @colortone2;
+}
+
+.@{sidebar} h4 {
+    color: @text;
+    margin-bottom: 10px;
+    padding: @sidebar-padding;
+}
+
+.@{sidebar} ul {
+    list-style: none;
+    padding: @sidebar-padding;
+}
+
+.@{sidebar} li {
+    margin-bottom: 5px;
+}
+
+.@{sidebar} a {
+    @{t-decor}: none;
+    color: @text;
+
+    &:hover {
+        @{t-decor}: underline;
+    }
+}
+
+.@{main-div} {
+    @{h}: 30vh;
+}
