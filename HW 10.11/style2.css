@@ -1,0 +1,42 @@
+body {
+    background-color: #333232;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {display: flex; justify-content: space-between; margin: 20px;}
+#main {
+    background-color: #3d3d3d;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+video {width: 100%; border-radius: 20px;}
+h1 {color: #ff0000;}
+#buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#subscribe {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#butts {margin-left: 10px; cursor: pointer;}
+#desc {margin-top: 20px;}
+dl {margin-top: 20px;}
+dt {font-weight: bold; color: #ff0000;}
+dd {margin-left: 20px;}
+aside {width: 25%;}
+div {margin-bottom: 20px;}
+div b {color: #ff0000;}
+div p {color: #606060;}
+.channel-info {margin-left: 10px;}
+.channel-info:first-child {color: #3498db;}
+.channel-info:nth-child(2) {color: #e74c3c; }
+.channel-info:last-child {color: #2ecc71;}
