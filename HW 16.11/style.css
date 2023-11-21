@@ -1,0 +1,48 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    overflow: hidden;
+}
+
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.left_sidebar {
+    padding: 20px;
+    width: 25vw;
+    height: 100vh;
+}
+
+.main {
+    padding: 20px;
+    width: 60vw;
+    height: 100vh;
+}
+
+.right_sidebar {
+    padding: 20px;
+    width: 25vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+    .right_sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 75vw;
+    }
+}
