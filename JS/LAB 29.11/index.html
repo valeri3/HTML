@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = ["audi", "mercedes", "opel", "mazda", "lexus", "bmw", "kia", "jeep", "infiniti"];
+
+        function sortCar() {
+            a.sort();
+        }
+
+        function print() {
+            document.write("<ul>");
+            for (let i = 0; i < a.length; i++) {
+                document.write("<li>" + a[i] + "</li>");
+            }
+            document.write("</ul>");
+        }
+
+        function find(name) {
+            let lowerCase = name.toLowerCase();
+            for (let i = 0; i < a.length; i++) {
+                if (a[i].toLowerCase() === lowerCase) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        sortCar();
+        print();
+        let CarToFind = prompt("Введите марку машины для поиска:");
+        if (CarToFind) {
+            let search = find(CarToFind);
+            if (search !== -1) {
+                document.write("Марка машины найдена. Индекс: " + search);
+            }
+            else {
+                document.write("Марка машины не найдена");
+            }
+        }
+    </script>
+</body>
+
+</html>
