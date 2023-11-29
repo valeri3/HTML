@@ -3,50 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css">
-  <title>Privat24 Registration</title>
+  <title>Registration</title>
 </head>
 
 <body>
   <div class="privat-logo">
     <img src="imgs/logo_PrivatBank.png">
   </div>
-
+<h3>Реєстрація</h3>
   <div class="privat-form">
     <form>
-      <h3>Реєстрація</h3>
+      
       <ul>
         <li>
           <label>
-            <span>Ім'я</span><br>
-            <input type="text" id="name" name="name" placeholder="Прізвище та ім'я" />
+            <span>Ім'я*</span><br>
+            <input type="text" id="name" name="name" placeholder="Ім'я..." />
           </label>
         </li>
         <li>
           <label>
-            <span>Номер телефону або email</span><br>
-            <input type="text" id="numberoremail" name="email" />
+            <span>Електронна пошта*</span><br>
+            <input type="text" id="numberoremail" placeholder="Пошта..." name="Пошта" />
+          </label>
+          <label>
+            <span>Номер телефону**</span><br>
+            <input type="text" id="numberoremail" placeholder="Телефон..." name="Телефон" />
           </label>
         </li>
         <li>
           <label>
-            <span>Пароль</span><br>
-            <input type="password" id="password" name="userPassword" placeholder="Мінімум 6 символів" />
-            <p class="passwordCharacters"><small>Паролі мають бути не менше 6 символів</small></p>
+            <span>Пароль*</span><br>
+            <input type="password" id="password" name="userPassword" placeholder="Пароль..." />
+            <p class="passwordCharacters"><small>Пароль має бути не менше 6 символів</small></p>
           </label>
         </li>
         <li>
           <label>
-            <span style="margin-top: 13px;">Повторно введіть пароль</span><br>
-            <input type="password" id="reEnter-password" name="userPassword" />
+            <span style="margin-top: 13px;">Підтвердження пароля*</span><br>
+            <input type="password" id="reEnter-password" placeholder="Підтвердити пароль..." name="userPassword" />
           </label>
         </li>
         <li id="buttons">
           <input id="submitBtn" type="submit" value="Далі" />
         </li>
-        <p class="small-text">Створюючи обліковий запис, ви погоджуєтеся з Privat24</p>
-        <p class="terms"><a href="#">Умови використання </a> та <a href="#">Повідомлення про конфіденційність</a>.</p>
+        <p class="small-text">Створюючи обліковий запис, ви погоджуєтеся з CleanUp </p>
+        <p class="terms"><a href="#">Умови використання </a> та <a href="#">Політикою конфіденційності</a>.</p>
         <hr>
-        <p class="small-text">Вже є аккаунт? <a href="#">Увійти</a></p>
+        <p class="small-text">Вже зареєстровані? <a href="#">Увійти</a></p>
         
       </ul>
     </form>
