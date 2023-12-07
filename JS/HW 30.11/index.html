@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function compareNumbers(num1, num2) {
+            if (num1 < num2) {
+                return -1;
+            }
+            else if (num1 > num2) {
+                return 1;
+            }
+            else {
+                return 0;
+            }
+        }
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            else {
+                return n * factorial(n - 1);
+            }
+        }
+        function combineDigits(d1, d2, d3) {
+            return parseInt(d1.toString() + d2.toString() + d3.toString());
+        }
+        function calculateRectangleArea(length, width) {
+            if (length === width) {
+                return length * length;
+            } 
+            else {
+                return length * width;
+            }
+        }
+        function isPerfectNumber(num) {
+            let sum = 0;
+            for (let i = 1; i < num; i++) {
+                if (num % i === 0) {
+                    sum += i;
+                }
+            }
+            if (sum === num) {
+                return true;
+            } 
+            else {
+                return false;
+            }
+        }
+        function perfectNumbersInRange(min, max) {
+            for (let i = min; i <= max; i++) {
+                if (isPerfectNumber(i)) {
+                    document.write(i + " ");
+                }
+            }
+        }
+        function formatTime(hours, minutes = 0, seconds = 0) {
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            return hours + ":" + minutes + ":" + seconds;
+        }
+        function timeToSeconds(h, m, s) {
+            return h * 3600 + m * 60 + s;
+        }
+        function secondsToTime(seconds) {
+            let hours = Math.floor(seconds / 3600);
+            let remainingSeconds = seconds % 3600;
+            let minutes = Math.floor(remainingSeconds / 60);
+            let sec = remainingSeconds % 60;
+            return formatTime(hours, minutes, sec);
+        }
+        function timeDifference(h1, m1, s1, h2, m2, s2) {
+            let sec1 = timeToSeconds(h1, m1, s1);
+            let sec2 = timeToSeconds(h2, m2, s2);
+            let d = Math.abs(sec1 - sec2);
+            return secondsToTime(d);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        //Задание
+        //1. Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 - если числа равны.
+        let rez1 = compareNumbers(5, 10);
+        document.write("Итог: " + rez1 + "<br>");
+
+        //2. Написать функцию, которая вычисляет факториал переданного ей числа.
+        let rez2 = factorial(7);
+        document.write("Факториал: " + rez2 + "<br>");
+
+        //3. Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
+        let rez3 = combineDigits(6, 7, 4);
+        document.write("Слияние чисел: " + rez3 + "<br>");
+
+        //4. Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
+        let area1 = calculateRectangleArea(5, 8);
+        document.write("Площадь прямоугольника: " + area1 + " см^2 <br>");
+        let area2 = calculateRectangleArea(3, 3);
+        document.write("Площадь квадрата: " + area2 + " см^2 <br>");
+
+        //5. Написать функцию, которая проверяет, является ли переданное ей число совершенным. Совершенное число – это число, равное сумме всех своих собственных делителей.
+        let a = isPerfectNumber(30);
+        document.write("Совершенность числа: " + a + "<br>");
+
+        //6. Написать функцию, которая принимает минимальное и максимальное значения для диапазона, и выводит только те числа из диапазона, которые являются совершенными. Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет.
+        document.write("Совершенные числа: ");
+        perfectNumbersInRange(1, 10000);
+        document.write("<br>");
+        //7. Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс». Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+        let b = formatTime(9);
+        document.write("Время: " + b + "<br>");
+        //8. Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
+        let seconds = timeToSeconds(3, 10, 25);
+        document.write("Результат (секунд): " + seconds + " секунд <br>");
+        //9. Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс».
+        let time = secondsToTime(6843);
+        document.write("Результат (чч:мм:сс): " + time + "<br>");
+
+        //10. Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров, которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс».
+        let c = timeDifference(13, 21, 19, 17, 23, 19);
+        document.write("Результат разницы: " + c + "<br>");
+    </script>
+</body>
+
+</html>
