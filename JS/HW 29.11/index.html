@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Фото 1
+        //Задание 1. Реализовать простейший вариант теста, поочередно выдавая пользователю вопросы, требующие односложных ответов ("Да" и "Нег"). После прохождения теста вывести результат. Вопросы и оценки за каждый хранить вопрос в сценарии в виде массивов.
+        // let a = ["JS лучше C++?", "2+2=5?", "Правильный ли перевод: AUDI A5 RED - ауди а5 красный?", "Столица Азербайджана - Баку?", "Мое прозвище: phen9men?"];
+        // let b = ["да", "нет", "да", "да", "нет"];
+        // let count = 0;
+        // for (let i = 0; i < a.length; i++) {
+        //     let userAnswer = prompt(a[i]);
+        //     if (userAnswer.toLowerCase() === b[i]) {
+        //         count++;
+        //     }
+        // }
+        // document.write("Вы правильно ответили на " + count + " из " + a.length + " вопросов.");
+
+        //Задание 2. От пользователя требуется ввести ФИО. Необходимо, чтобы сценарий проверил ввод пользователя на наличие недопустимых символов. Недопустимыми символами считать любые символы, кроме букв, пробелов и точек. Эти символы можно задать в сценарии в виде строки.
+        // let a = prompt("Введите ваше ФИО:");
+        // let b = /^[a-zA-Zа-яА-Я\s.]+$/;
+        // if (b.test(a)) {
+        //     alert("Ваше ФИО введено корректно.");
+        //     document.write("Ваше ФИО введено корректно.");
+        // }
+        // else {
+        //     alert("Ваше ФИО содержит недопустимые символы.");
+        //     document.write("Ваше ФИО содержит недопустимые символы.");
+        // }
+
+        //Задание 3. Разделить на составные части введенный http-адрес.
+        // let url = prompt("Введите HTTP-ссылку:");
+        // let protocol, host, path, query;
+
+        // if (url.indexOf("://") !== -1) {
+        //     protocol = url.split("://")[0];
+        //     let restOfUrl = url.split("://")[1];
+
+        //     if (restOfUrl.indexOf("/") !== -1) {
+        //         host = restOfUrl.split("/")[0];
+        //         let pAndQ = restOfUrl.substring(host.length);
+        //         if (pAndQ.indexOf("?") !== -1) {
+        //             path = pAndQ.split("?")[0];
+        //             query = pAndQ.split("?")[1];
+        //         }
+        //         else {
+        //             path = pAndQ;
+        //         }
+        //     }
+        //     else {
+        //         host = restOfUrl;
+        //     }
+        // }
+
+        // if (protocol) {
+        //     document.write("Протокол: " + protocol + "<br>");
+        // }
+        // if (host) {
+        //     document.write("Хост: " + host + "<br>");
+        // }
+        // if (path) {
+        //     document.write("Путь: " + path + "<br>");
+        // }
+        // if (query) {
+        //     document.write("Строка запроса: " + query + "<br>");
+        // }
+
+
+        //Фото 2
+        //Задание 2. Создать массив из 5 случайных чисел и написать следующие функции (в нашем случае создаем массив с заранее введенными значениями).
+        // a = [1, 2, 3, 4, 5];
+        // b = [1, 2, 6, 7, 8];
+        // document.write("Данные<br>Массив 1: ");
+        // for (let i = 0; i < a.length; i++) {
+        //     document.write(a[i] + " ");
+        // }
+        // document.write("<br>Массив 2: ");
+        // for (let i = 0; i < b.length; i++) {
+        //     document.write(b[i] + " ");
+        // }
+        //Пункт 1. Функция принимает 2 массива и возвращает новый массив, в котором собраны все элементы из двух массивов без повторений.
+        // document.write("<br><br>Задание 2<br>Пункт 1: ");
+        // function mergeArrays1(arr1, arr2) {
+        //     let mergedArr = a.concat(b);
+        //     let uniqueArr = [];
+
+        //     for (let i = 0; i < mergedArr.length; i++) {
+        //         let c = mergedArr[i];
+        //         if (!uniqueArr.includes(c)) {
+        //             uniqueArr.push(c);
+        //         }
+        //     }
+        //     return uniqueArr;
+        // }
+        // let rez1 = mergeArrays1(a, b);
+        // for (let i = 0; i < rez1.length; i++) {
+        //     document.write(rez1[i] + " ");
+        // }
+
+        //Пункт 2. Функция принимает 2 массива и возвращает новый массив, в котором собраны общие элементы (то есть элементы, которые встречаются и в первом и во втором массивах) без повторений.
+        // document.write("<br>Пункт 2: ");
+        // function mergeArrays2(arr1, arr2) {
+        //     let commonElems = [];
+        //     for (let i = 0; i < arr1.length; i++) {
+        //         let d = arr1[i];
+        //         if (arr2.includes(d) && !commonElems.includes(d)) {
+        //             commonElems.push(d);
+        //         }
+        //     }
+        //     return commonElems;
+        // }
+        // let rez2 = mergeArrays2(a, b);
+        // for (let i = 0; i < rez2.length; i++) {
+        //     document.write(rez2[i] + " ");
+        // }
+
+        //Пункт 3. Функция принимает 2 массива и возвращает новый массив, в котором собраны все элементы из первого массива, которых нет во втором массиве.
+        // document.write("<br>Пункт 3: ");
+        // function mergeArrays3(arr1, arr2) {
+        //     let elemsNotInArr2 = [];
+        //     for (let i = 0; i < arr1.length; i++) {
+        //         let e = arr1[i];
+        //         if (!arr2.includes(e)) {
+        //             elemsNotInArr2.push(e);
+        //         }
+        //     }
+        //     return elemsNotInArr2;
+        // }
+        // let rez3 = mergeArrays3(a, b);
+        // for (let i = 0; i < rez3.length; i++) {
+        //     document.write(rez3[i] + " ");
+        // }
+    </script>
+</body>
+
+</html>
