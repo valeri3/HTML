@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 01</title>
+</head>
+
+<body>
+    <button id="testBtn">Test Button</button>
+    <script>
+        /*
+        Задание:
+        Добавьте для кнопки testBtn обработчик на событие click.
+        Обработчик должен выводить на экран сообщение Hello world.
+        Добавьте обработчик тремя разными способами.
+        */
+        // Способ 1: Используя атрибут HTML
+        document.getElementById('testBtn').onclick = function () {
+            alert('Hello world - Способ 1');
+        };
+
+        // Способ 2: Используя метод addEventListener
+        function clickHandler() {
+            alert('Hello world - Способ 2');
+        }
+        document.getElementById('testBtn').addEventListener('click', clickHandler);
+
+        // Способ 3: Используя анонимную функцию внутри addEventListener
+        document.getElementById('testBtn').addEventListener('click', function () {
+            alert('Hello world - Способ 3');
+        });
+    </script>
+</body>
+
+</html>
