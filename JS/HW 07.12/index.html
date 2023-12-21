@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Задание 1
+    Реализовать класс ExtendedDate, унаследовав его от стандартного
+    класса Date и добавив следующие возможности:
+     метод для вывода даты (числа и месяца) текстом;
+     метод для проверки – это прошедшая дата или будущая (если
+    прошедшая, то метод возвращает false; если будущая или текущая, то
+    true);
+     метод для проверки – високосный год или нет;
+     метод, возвращающий следующую дату.
+    Создать объект класса ExtendedDate и вывести на экран результаты
+    работы новых методов. -->
+    <div>
+        <p id="dateText"></p>
+        <p id="isFuture"></p>
+        <p id="isLeapYear"></p>
+        <p id="nextDate"></p>
+    </div>
+
+    <script>
+        class ExtendedDate extends Date {
+            constructor(y, m, d) { super(y, m, d); }
+            getDateAsText() {
+                const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+                return `${this.getDate()} ${months[this.getMonth()]}`;
+            }
+            isFutureDate() { const now = new Date(); return this.getTime() >= now.getTime(); }
+            isLeapYear() { const y = this.getFullYear(); return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0); }
+            getNextDate() { const nextDay = new Date(this); nextDay.setDate(nextDay.getDate() + 1); return nextDay; }
+        }
+
+        const extendedDate = new ExtendedDate(2024, 10, 17);
+        const dateText = extendedDate.getDateAsText();
+        const isFuture = extendedDate.isFutureDate();
+        const isLeapYear = extendedDate.isLeapYear();
+        const nextDate = extendedDate.getNextDate().toDateString();
+        document.getElementById('dateText').innerText = `Дата: ${dateText}`;
+        document.getElementById('isFuture').innerText = `Будущая дата: ${isFuture}`;
+        document.getElementById('isLeapYear').innerText = `Високосный год: ${isLeapYear}`;
+        document.getElementById('nextDate').innerText = `Следующая дата: ${nextDate}`;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Задание 2
+    Реализовать класс, описывающий простой маркер. В классе должны
+    быть следующие компоненты:
+     поле, которое хранит цвет маркера;
+     поле, которое хранит количество чернил в маркере (в процентах);
+     метод для печати (метод принимает строку и выводит текст
+    соответствующим цветом; текст выводится до тех пор, пока в маркере
+    есть чернила; один не пробельный символ – это 0,5% чернил в маркере).
+    Реализовать класс, описывающий заправляющийся маркер,
+    унаследовав его от простого маркера и добавив метод для заправки маркера.
+    Продемонстрировать работу написанных методов. -->
+
+    <script>
+        class Marker {
+            constructor(inkLevel) { this.inkLevel = inkLevel; }
+            textColor;
+            print(text, textColor) {
+                let printedText = '';
+                this.textColor = textColor;
+                for (let i = 0; i < text.length; i++) {
+                    if (text[i] !== ' ' && this.inkLevel >= 0.5) {
+                        printedText += `<span style="color: ${textColor}">${text[i]}</span>`;
+                        this.inkLevel -= 0.5;
+                    }
+                    else if (text[i] === ' ') { printedText += ' '; }
+                    else { break; }
+                }
+                document.write(`Printed text in ${this.textColor}: ${printedText}<br>`);
+                document.write(`Ink level remaining: ${this.inkLevel}%<br>`);
+            }
+        }
+
+        class RefillableMarker extends Marker {
+            constructor(inkLevel, maxInkCapacity) { super(inkLevel); this.maxInkCapacity = maxInkCapacity; }
+            refill() {
+                const inkToAdd = this.maxInkCapacity - this.inkLevel;
+                this.inkLevel = this.maxInkCapacity;
+                document.write(`Refilled marker with ${inkToAdd}% ink<br>`);
+                document.write(`Ink level now: ${this.inkLevel}%<br>`);
+            }
+        }
+
+        let myMarker = new RefillableMarker(30, 100);
+        myMarker.print('Hello, World! This is a marker', 'pink');
+        myMarker.refill();
+        myMarker.print('HELLO MIr', 'pink');
+        myMarker.refill();
+    </script>
+</body>
+
+</html>
